@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.materias {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(13, 43, 78), rgb(29, 79, 137));
+}
+
+.menu {
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(217, 217, 217);
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(217, 217, 217);
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dia {
+    color: rgb(68, 156, 52);
+}
+
+.menu-dias {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 1.5rem;
+}
+
+.menu-dias a {
+    font-size: 1.2rem;
+    color: rgb(217, 217, 217);
+    text-decoration: none;
+}
+
+.materia {
+    display: flex;
+    justify-content: center;
+    color: rgb(68, 156, 52);
+    font-size: 1.2rem;
+    text-shadow: 2px 3px 4px #000000;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.bloco2 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.avaliacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 1.4rem;
+}
+
+
+.provas {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#resultados {
+    transform: translateY(20px);
+}
+
+.circle-container {
+    position: relative;
+    transform: translateY(10px);
+    width: 40px;
+    height: 40px;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    background: conic-gradient(rgb(68, 156, 52) var(--percentage), #ccc 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle::before {
+    content: '';
+    width: 80%;
+    height: 80%;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.percentage {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(68, 156, 52);
+}
+
+.circle[data-percentage="70"] {
+    --percentage: 70%;
+}
+
+.circle[data-percentage="50"] {
+    --percentage: 50%;
+}
+
+.circle[data-percentage="30"] {
+    --percentage: 30%;
+}

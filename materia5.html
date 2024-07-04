@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="materia.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Matérias</title>
 </head>
 
@@ -16,10 +17,10 @@
             <a href="" class="inicio"><img src="img\casa.png" alt="">
                 <p>inicio</p>
             </a>
-            <a href="" class="livro"><img src="img\livro.png" alt="">
-                <p>matérias</p>
+            <a href="materia1.html" class="livro"><img src="img\livro-azul.png" alt="">
+                <p class="select">matérias</p>
             </a>
-            <a href="" class="financeiro"><img src="img\financeiro.png" alt="">
+            <a href="financeiro.html" class="financeiro"><img src="img\financeiro.png" alt="">
                 <p>financeiro</p>
             </a>
             <a href="" class="mais"><img src="img\menu.png" alt="">
@@ -40,8 +41,18 @@
         </section>
 
 
-        <header class="materia">
-            <h1>PROGRAMAÇÃO WEB I</h1>
+        <header class="materia-container">
+            <div class="materia">
+                <h1 class="materia-titulo">PROGRAMAÇÃO WEB I</h1>
+                <div class="sala-container">
+                    <div>Sala:</div>
+                    <div>C19</div>
+                </div>
+                <div class="carga-container">
+                    <div>Carga Horária:</div>
+                    <div>60H</div>
+                </div>
+            </div>
         </header>
 
 
@@ -61,10 +72,10 @@
                         <p id="resultados">10</p>
                     </div>
                     <div class="resultadoFinal">
-                        <p>Resultado</p>
+                        <p>Média</p>
                         <div class="circle-container">
-                            <div class="circle" data-percentage="70">
-                                <span class="percentage">70%</span>
+                            <div class="circle" data-percentage="100">
+                                <span class="percentage">100%</span>
                             </div>
                         </div>
 
@@ -88,7 +99,7 @@
                     </div>
                     <div class="prova2">
                         <p>Ausências</p>
-                        <p id="resultados">3</p>
+                        <p id="resultados" class="ausencia">3</p>
                     </div>
                     <div class="resultadoFinal">
                         <p>Frequência</p>

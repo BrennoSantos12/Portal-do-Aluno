@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 :root {
     --background-dark-blue-color: rgb(13, 43, 78);
     --background-light-blue-color: rgb(29, 79, 137);
@@ -10,57 +11,42 @@
     --white-color: rgb(217, 217, 217);
     --green-fatec: rgb(68, 156, 52);
     --background: linear-gradient(to bottom, var(--background-dark-blue-color), var(--background-light-blue-color));
+    --red-color: red;
+    --numero-fontSize: 1.4rem;
+    --font-settings: normal 800 1rem "Oswald", sans-serif;
+    --font-optical-sizing: auto;
 }
 
 
 
 .materias {
-    height: 100vh;
-    background: var(--background)
+    height: 100%;
+    background: var(--background);
 }
 
-.menu {
-    z-index: 1;
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 6rem;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--white-color);
-}
 
-.menu a {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: var(--black-color);
-    text-decoration: none;
-
-}
 
 .titulo {
     display: flex;
     justify-content: center;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0.5rem;
     color: var(--white-color);
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    font: var(--font-settings);
+    font-optical-sizing: var(--font-optical-sizing);
 }
 
 .dia {
     color: var(--green-fatec);
+    font-size: 1.5rem;
 }
 
 .menu-dias {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 .menu-dias a {
@@ -69,39 +55,84 @@
     text-decoration: none;
 }
 
-.materia {
+.materia-container {
     display: flex;
     justify-content: center;
+    text-align: center;
+    font: var(--font-settings);
+    font-optical-sizing: var(--font-optical-sizing);
+}
+
+.materia-titulo {
+    font-size: 1.3rem;
     color: var(--green-fatec);
-    font-size: 0.8rem;
-    text-shadow: 2px 3px 4px var(--black-color);
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+}
+
+.materia {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 15rem;
+    background-color: var(--white-color);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 1.2rem;
+    margin: 1rem;
+}
+
+.sala-container {
+    display: flex;
+    gap: 6rem;
+}
+
+.carga-container {
+    display: flex;
+    gap: 2rem;
+    font-size: .9rem;
 }
 
 .bloco {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.2rem;
+    font: var(--font-settings);
+    font-optical-sizing: var(--font-optical-sizing);
 }
 
 .bloco2 {
     display: flex;
     justify-content: center;
-    padding: 1rem;
+    padding: 1.2rem;
+    font: var(--font-settings);
+    font-optical-sizing: var(--font-optical-sizing);
 }
+
+@media screen and (max-height: 700px) {
+    .bloco {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .bloco2 {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+}
+
 
 .avaliacao {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    width: 15rem;
     background-color: var(--white-color);
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 
@@ -109,18 +140,23 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #resultados {
+    font-size: var(--numero-fontSize);
     transform: translateY(20px);
+}
+
+.ausencia {
+    color: var(--red-color);
 }
 
 .circle-container {
     position: relative;
     transform: translateY(10px);
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .circle {
@@ -148,6 +184,10 @@
     font-size: 0.8em;
     font-weight: bold;
     color: var(--green-fatec);
+}
+
+.circle[data-percentage="100"] {
+    --percentage: 100%;
 }
 
 .circle[data-percentage="70"] {

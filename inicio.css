@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-dark-blue-color: rgb(13, 43, 78);
+    --background-light-blue-color: rgb(29, 79, 137);
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(217, 217, 217);
+    --green-fatec: rgb(68, 156, 52);
+    --lightBlue-fatec: rgb(19, 159, 221);
+    --background: linear-gradient(to bottom, var(--background-dark-blue-color), var(--background-light-blue-color));
+    --red-color: red;
+    --numero-fontSize: 1.4rem;
+    --font-settings: normal 800 1.3rem "Oswald", sans-serif;
+    --font-optical-sizing: auto;
+    --text-shadow: 1px 1px 2px var(--black-color);
+}
+
+body {
+    font: var(--font-settings);
+    font-optical-sizing: var(--font-optical-sizing);
+    background: var(--background);
+}
+
+.corpo {
+    height: auto;
+    padding-bottom: 100%;
+}
+
+.titulo {
+    font-size: 2rem;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white-color);
+    gap: 10px;
+    padding: 1rem;
+}
+
+.informacoes-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.materia {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    width: 90%;
+}
+
+.materia-titulo {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.materia-titulo-principal {
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: space-around;
+    color: var(--green-fatec);
+}
+
+.sala {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.atividades-titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.atividades {
+    display: flex;
+    font-size: 1rem;
+    padding: 0.5rem;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.classroom {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--lightBlue-fatec);
+}
+
+.aviso-titulo {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--white-color);
+}
+
+.avisos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.caixa-aviso-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.8rem;
+    background: var(--white-color);
+    border-radius: 10px;
+    width: 20rem;
+    height: 3rem;
+}
+
+.mes {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    justify-content: center;
+    color: var(--white-color);
+    background: var(--lightBlue-fatec);
+    border-radius: 10px 0px 0px 10px;
+    width: 4rem;
+    height: 3rem;
+}

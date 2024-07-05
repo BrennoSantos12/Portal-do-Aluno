@@ -6,6 +6,7 @@
 body {
     font: var(--font-settings);
     font-optical-sizing: var(--font-optical-sizing);
+    background: var(--background);
 }
 
 :root {
@@ -14,7 +15,7 @@ body {
     --black-color: rgb(0, 0, 0);
     --white-color: rgb(217, 217, 217);
     --green-fatec: rgb(68, 156, 52);
-    --background: linear-gradient(to bottom, var(--background-dark-blue-color), var(--background-light-blue-color));
+    --background: linear-gradient(to bottom, var(--background-light-blue-color), var(--background-light-blue-color));
     --red-color: red;
     --numero-fontSize: 1.4rem;
     --font-settings: normal 800 1.3rem "Oswald", sans-serif;
@@ -22,9 +23,20 @@ body {
     --text-shadow: 1px 1px 2px var(--black-color);
 }
 
+
+
 .corpo {
+    height: auto;
+    padding-bottom: 100%;
+}
+
+.parcelas-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
-    background: var(--background);
+    gap: 30px;
 }
 
 .titulo {
@@ -57,39 +69,68 @@ body {
     margin: 50px;
 }
 
-.parcelas-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120vh;
-    gap: 20px;
-}
 
 .parcela {
     display: flex;
+
     flex-direction: column;
     background-color: var(--white-color);
     border-radius: 10px;
-    font-size: 0.8rem;
-    width:90%;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    width: 90%;
 }
+
 .parcela-indicador {
     margin: 0.3rem;
     font-size: 1rem;
     display: flex;
     justify-content: space-around;
+
 }
+
+.expandir {
+    display: flex;
+}
+
 .valores {
+    transition: opacity 0.5s ease;
     display: none;
+    opacity: 0;
     flex-direction: column;
     gap: 10px;
     padding: 1rem;
 }
-.valores button {
+
+.item1 {
+
+    opacity: 0;
+    display: none;
+    padding: 0.1rem;
+}
+
+.item2 {
+    opacity: 0;
+    display: none;
+    padding: 0.1rem;
+}
+
+.item3 {
+    opacity: 0;
+    display: none;
+    padding: 0.1rem;
+
+}
+
+.item4 {
+    opacity: 0;
+    display: none;
+    margin: 0.4rem;
+    transform: translate(130px);
     width: 50%;
     background-color: #3774ff;
     color: var(--white-color);
     border-style: none;
-    border-radius: 10px;
-    height: 2rem;
+    border-radius: 15px;
+    height: 2.5rem;
 }

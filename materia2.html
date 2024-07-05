@@ -13,20 +13,7 @@
 
     <main class="materias">
 
-        <nav class="menu">
-            <a href="" class="inicio"><img src="img\casa.png" alt="">
-                <p>inicio</p>
-            </a>
-            <a href="materia1.html" class="livro"><img src="img\livro-azul.png" alt="">
-                <p class="select">matérias</p>
-            </a>
-            <a href="financeiro.html" class="financeiro"><img src="img\financeiro.png" alt="">
-                <p>financeiro</p>
-            </a>
-            <a href="" class="mais"><img src="img\menu.png" alt="">
-                <p>menu</p>
-            </a>
-        </nav>
+        
 
 
 
@@ -44,81 +31,79 @@
             <a href="materia5.html">sexta</a>
         </nav>
 
+        <section class="materia-container">
 
-        <header class="materia-container">
             <div class="materia">
-                <h1 class="materia-titulo">ESTATÍSTICA</h1>
-                <div class="sala-container">
-                    <div >Sala:</div>
-                    <div >C19</div>     
+                <div class="titulo-materia">
+                    <h1>ESTATÍSTICA</h1>
                 </div>
-                <div class="carga-container">
-                    <div >Carga Horária:</div>
-                    <div >60H</div>     
+                <div class="valores">
+                    <p>Sala:</p>
+                    <p>C19</p>
+                </div>
+                <div class="valores">
+                    <p>Carga <br> Horária:</p>
+                    <p class="organizar">60H</p>
                 </div>
             </div>
-        </header>
-
-
-        <section class="bloco">
-            <div class="avaliacao">
-                <div class="titulo-avaliacoes">
+            <div class="materia">
+                <div class="materia-indicador">
                     <h1>Avaliações</h1>
                 </div>
-
-                <div class="provas">
-                    <div class="prova1">
-                        <p>Prova 1</p>
-                        <p id="resultados">10</p>
-                    </div>
-                    <div class="prova2">
-                        <p>Prova 2</p>
-                        <p id="resultados">10</p>
-                    </div>
-                    <div class="resultadoFinal">
-                        <p>Média</p>
-                        <div class="circle-container">
-                            <div class="circle" data-percentage="100">
-                                <span class="percentage">100%</span>
-                            </div>
+                <div class="valores">
+                    <p>Prova 1</p>
+                    <p>Prova 2</p>
+                    <p>Média</p>
+                </div>
+                <div class="valores">
+                    <p>10</p>
+                    <p>10</p>
+                    <div class="circle-container">
+                        <div class="circle" data-percentage="100">
+                            <span class="percentage">100%</span>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="bloco2">
-            <div class="avaliacao">
-                <div class="titulo-avaliacoes">
-                    <h1>Frequência</h1>
+            <div class="materia">
+                <div class="materia-indicador">
+                    <h1>Faltas</h1>
                 </div>
-
-                <div class="provas">
-                    <div class="prova1">
-                        <p>Aulas</p>
-                        <p id="resultados">10</p>
-                    </div>
-                    <div class="prova2">
-                        <p>Ausências</p>
-                        <p id="resultados" class="ausencia">3</p>
-                    </div>
-                    <div class="resultadoFinal">
-                        <p>Frequência</p>
-                        <div class="circle-container">
-                            <div class="circle" data-percentage="70">
-                                <span class="percentage">70%</span>
-                            </div>
+                <div class="valores">
+                    <p>Aulas</p>
+                    <p>Ausências</p>
+                    <p>Frequência</p>
+                </div>
+                <div class="valores">
+                    <p>10</p>
+                    <p class="ausencia">3</p>
+                    <div class="circle-container">
+                        <div class="circle" data-percentage="70">
+                            <span class="percentage">70%</span>
                         </div>
-
-
                     </div>
                 </div>
             </div>
+
+
+
+
+
+            <nav class="menu">
+                <a href="" class="inicio"><img src="img\casa.png" alt="">
+                    <p>inicio</p>
+                </a>
+                <a href="materia1.html" class="livro"><img src="img\livro-azul.png" alt="">
+                    <p class="select">matérias</p>
+                </a>
+                <a href="financeiro.html" class="financeiro"><img src="img\financeiro.png" alt="">
+                    <p>financeiro</p>
+                </a>
+                <a href="" class="mais"><img src="img\menu.png" alt="">
+                    <p>menu</p>
+                </a>
+            </nav>
         </section>
-
-
 
     </main>
     <script src="app.js"></script>
